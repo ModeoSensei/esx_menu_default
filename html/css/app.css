@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i&display=swap&subset=latin-ext');
+
+@font-face {
+  font-family: SignPainter;
+  src: url('../fonts/pdown.ttf');
+}
+
+@font-face {
+  font-family: vo;
+  src: url('../fonts/bankgothic.ttf');
+}
+
+.menu {
+  position: absolute;
+  min-width: 360px;
+  font-family: vo;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, .64);
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, .16);
+  border: 1px solid white;
+}
+
+.menu .head {
+  padding: .75rem 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, .80);
+  font-family: SignPainter;  
+  background-color: rgba(0, 0, 0, .80);
+}
+
+
+.menu.align-left {
+  left: 40;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.menu.align-top-left {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu.align-top {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu.align-top-right {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu.align-right {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu.align-bottom-right {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu.align-bottom {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu.align-bottom-left {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu.align-center {
+  left: 30;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+
+.head__title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.head__description {
+  font-size: .875rem;
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255, 255, 255, .50);
+}
+
+.menu .menu-items {
+  max-height: 375px;
+  overflow-y: hidden;
+}
+
+.menu .menu-items .menu-item {
+  display: block;
+  align-items: center;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 13px;
+  line-height: 39px;
+  color: rgba(255, 255, 255, .80);
+}
+
+
+.menu .menu-items .menu-item.selected {
+  color: rgba(0, 0, 0, .80);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(149, 165, 166, 1) 100%);
+  -webkit-animation-name: fadeIn; 
+  -webkit-animation-duration: 0.4s; 
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; opacity: 1\9; /* IE9 only */ } to { opacity:1; } }
+
+
